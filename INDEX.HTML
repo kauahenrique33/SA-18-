@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Paraíso</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Hotel Paraíso</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Experimente o luxo e conforto do Hotel Paraíso</h2>
+      <p>Reserve já e viva dias inesquecíveis.</p>
+      <a href="#contato" class="btn">Faça sua reserva</a>
+    </div>
+  </section>
+  <section id="sobre" class="sobre">
+  <div class="sobre-container">
+    <div class="sobre-img">
+      <img src="imagem.jpg" alt="Hotel Paraíso">
+    </div>
+    <div class="sobre-texto">
+      <h2>Sobre o Hotel Paraíso</h2>
+      <p>
+        O Hotel Paraíso é sinônimo de sofisticação, conforto e hospitalidade. Com mais de 20 anos de tradição,
+         oferecemos uma experiência única para hóspedes que buscam qualidade, atendimento personalizado e um ambiente inesquecível.
+      </p>
+      <p>
+        Nossas instalações incluem suítes modernas, spa, piscina aquecida, academia, restaurante internacional e muito mais.
+      </p>
+    </div>
+  </div>
+
+  <div class="valores">
+    <div class="card">
+      <h3> Missão</h3>
+      <p>Oferecer estadias confortáveis, com excelência no atendimento e foco na experiência do cliente.</p>
+    </div>
+    <div class="card">
+      <h3> Visão</h3>
+      <p>Ser o hotel mais admirado da região, reconhecido por inovação e qualidade nos serviços.</p>
+    </div>
+    <div class="card">
+      <h3> Valores</h3>
+      <p>Excelência, respeito, ética, inovação e cuidado em cada detalhe.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <h2>Por que escolher o Hotel Paraíso?</h2>
+      <ul>
+        <li>🏖 Localização à beira-mar</li>
+        <li>🛏 Suítes confortáveis com ar-condicionado</li>
+        <li>🍽 Café da manhã incluso</li>
+        <li>📶 Wi-Fi grátis em toda a propriedade</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="testimonials">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <blockquote>"Simplesmente perfeito! O atendimento é excelente." — Ana Paula</blockquote>
+      <blockquote>"Melhor viagem da minha vida, recomendo muito!" — João Silva</blockquote>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2>Faça sua reserva</h2>
+      <form id="formReserva">
+        <input type="text" placeholder="Seu nome" required/>
+        <input type="email" placeholder="Seu email" required/>
+        <textarea placeholder="Data da entrada e saída" required></textarea>
+        <input type="text" placeholder="Tipo de quarto desejado" required/>
+        <input type="text" placeholder="Número de hóspedes" required/>
+        <button type="submit">Enviar</button>
+        <p id="mensagemEnvio"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hotel Paraíso. Todos os direitos reservados.</p>
+      <div class="redes">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("formReserva");
+    const mensagem = document.getElementById("mensagemEnvio");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      mensagem.textContent = "Reserva realizada com sucesso!";
+      mensagem.style.color = "green";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
